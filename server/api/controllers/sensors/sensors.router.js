@@ -3,5 +3,6 @@ import controller from './sensor.controller';
 
 export default express
   .Router()
-  .get('/temperature', controller.temperature);
+  .get('/temperature', controller.temperature)
+  .get('/pressure', controller.pressure());
 

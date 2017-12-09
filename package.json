@@ -15,6 +15,7 @@
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
     "pino": "^4.7.1",
+    "raspi-sensors": "^0.2.11",
     "rxjs": "^5.5.5",
     "source-map-support": "^0.4.15",
     "swagger-express-middleware": "^1.0.0-alpha.12"

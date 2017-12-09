@@ -37,6 +37,14 @@ paths:
       responses:
         200:
           description: Returns the temperature sensor data.
+  /sensors/pressure:
+    get:
+      tags:
+        - Sensors
+      description: Pressure sensor
+      responses:
+        200:
+          description: Returns the pressure sensor data.
   /examples:
     get:
       tags:
