@@ -1,18 +1,18 @@
 import 'rxjs/add/operator/first';
 
-import temperatureProvider from '../../provider/sensor.provider';
+import sensorProvider from '../../provider/sensor.provider';
 
 
 export class Controller {
   temperature(req, res) {
-    temperatureProvider.tempObserver.first().subscribe({
+    sensorProvider.tempObserver.first().subscribe({
       next: x => {
         res.json(x);
       },
     });
   }
   pressure(req, res) {
-    temperatureProvider.pressureObserver.first().subscribe({
+    sensorProvider.pressureObserver.first().subscribe({
       next: x => {
         res.json(x);
       },
