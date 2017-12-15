@@ -59,7 +59,7 @@ class SensorService {
     this.BMP180.fetch((err, data) => {
       if (err) {
       //  console.error('An error occured!');
-        l.error(err.cause);
+      //  l.error(err.cause);
         this.tempObserver.next(this.genTempData());
         this.pressureObserver.next(this.genPressureData());
         return;

@@ -6,6 +6,7 @@ import * as os from 'os';
 import cookieParser from 'cookie-parser';
 import swaggerify from './swagger';
 import l from './logger';
+import database from './database';
 
 const app = new Express();
 
@@ -17,6 +18,7 @@ export default class ExpressServer {
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(cookieParser(process.env.SESSION_SECRET));
     app.use(Express.static(`${root}/public`));
+    // database.init();
   }
 
   router(routes) {
